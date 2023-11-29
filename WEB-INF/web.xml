@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+<!--    配置Web英勇的初始化参数-->
+    <context-param>
+        <param-name>url</param-name>
+        <param-value>http://www.baidu.com/</param-value>
+    </context-param>
+
+<!--    配置Servlet-->
+    <servlet>
+        <servlet-name>servletDemo1</servlet-name>
+        <servlet-class>com.ServletDemo.ServletDemo1</servlet-class>
+    </servlet>
+
+<!--    配置Servlet映射，用的是实现接口Servlet-->
+<!--    一个Servlet可以映射到多个URL上-->
+<!--    也可以用通配符 * 作为URL，但是使用时会有问题-->
+    <servlet-mapping>
+<!--                    这里的名字必须和上面对应-->
+        <servlet-name>servletDemo1</servlet-name>
+<!--                    在浏览器地址栏中输的路径           |  -->
+        <url-pattern>/Demo1</url-pattern>
+    </servlet-mapping>
+
+<!--    第二个Servlet，用的是实现抽象方法GenericServlet-->
+    <servlet>
+        <servlet-name>ServletDemo2</servlet-name>
+        <servlet-class>com.ServletDemo.ServletDemo2</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ServletDemo2</servlet-name>
+        <url-pattern>/Demo2</url-pattern>
+    </servlet-mapping>
+
+<!--    第三种方式-->
+    <servlet>
+        <servlet-name>ServletDemo3</servlet-name>
+        <servlet-class>com.ServletDemo.ServletDemo3</servlet-class>
+<!--        Servlet初始化参数配置-->
+
+
+        <init-param>
+            <param-name>username</param-name>
+            <param-value>川川</param-value>
+        </init-param>
+
+        <init-param>
+            <param-name>address</param-name>
+            <param-value>川川</param-value>
+        </init-param>
+
+        <init-param>
+            <param-name>phone</param-name>
+            <param-value>18523181431</param-value>
+        </init-param>
+
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ServletDemo3</servlet-name>
+        <url-pattern>/Demo3</url-pattern>
+    </servlet-mapping>
+
+
+
+    <servlet>
+        <servlet-name>ServletContextDemo01</servlet-name>
+        <servlet-class>com.ServletContextDemo.ServletContextDemo01</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>ServletContextDemo01</servlet-name>
+        <url-pattern>/ServletContextDemo01</url-pattern>
+    </servlet-mapping>
+
+
+
+    <servlet>
+        <servlet-name>ServletContextDemo02</servlet-name>
+        <servlet-class>com.ServletContextDemo.ServletContextDemo02</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>ServletContextDemo02</servlet-name>
+        <url-pattern>/ServletContextDemo02</url-pattern>
+    </servlet-mapping>
+
+</web-app>

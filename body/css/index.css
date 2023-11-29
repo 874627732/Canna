@@ -1,0 +1,31 @@
+.content{
+
+    width: 80%;
+    /* height: 1900px; */
+    margin: 10px auto;
+    display: flex;
+    flex-wrap:wrap; 
+    /* flex-direction:row ;  */
+
+    /* flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    align-content: start */
+}
+.content .colomn{
+    position: relative;
+    float: left;
+    /* flex: 1 0 auto; */
+    float: left;
+    padding: 0px 10px 0px 10px;
+    height: 30%;
+    width: 31%;
+     margin-top: 10px; 
+    /* background-color: aqua; */
+}
+/* .content .colomn:nth-child(2){
+    margin-top: -80px;
+}
+.content .colomn:nth-child(8){
+    margin-top: -40px;
+} */

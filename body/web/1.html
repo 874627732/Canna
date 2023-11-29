@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+        function changeImage() {
+            document.getElementById('imageCode').src = '/GenerateCode?' + Math.random();
+        }
+    </script>
+</head>
+<body>
+<form action="/checkCode" method="post">
+    验证码：<input type="text" name="validateCode">
+    <img src="/GenerateCode" alt="验证码未生成" id="imageCode" onclick="changeImage()">
+    <a href="javascript:void(0)" onclick="changeImage()">看不清，换一张</a>
+    <input type="submit" value="提交">
+</form>
+</body>
+</html>

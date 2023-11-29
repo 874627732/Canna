@@ -1,0 +1,108 @@
+
+
+.swiper{
+    height: 700px;
+    width: 100%;
+    /* height: 308px; */
+    overflow: hidden;
+    position: relative;
+}
+ul.img{
+    width: 1000%;
+    overflow: hidden;
+}
+ul.img li{
+    width: 10%;
+    float: left;
+}
+ul.img li img{
+    width: 100%;
+    z-index: -1;
+}
+
+.swiper .prev,.swiper .next{
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    top: 110px;
+}
+.swiper .prev{
+    left: 30px;
+    background: url(../1.11素材/images/imgs/index-xb2.png);
+}
+.swiper .next{
+    right: 30px;
+    background: url(../1.11素材/images/imgs/index-xb1.png);
+}
+.swiper .prev:hover{
+    left: 30px;
+    background: url(../1.11素材/images/imgs/index-xb4.png);
+}
+.swiper .next:hover{
+    right: 30px;
+    background: url(../1.11素材/images/imgs/index-xb3.png);
+}
+.swiper ul.count{
+    position: relative;
+    /* top: 330px; */
+    /* left: 900px; */
+    /* float: left; */
+
+    height: 50px;
+    width: 5%;
+    display: flex;
+    margin: -100px auto;
+
+}
+.swiper ul.count li{
+    width: 5px;
+    font-size: 30px;
+
+    
+    /* list-style-type:disc; */
+
+    /* //左浮动 */
+    flex: 3;
+    height: 20px;
+}
+.swiper ul.count li a{
+    color: grey;
+}
+.swiper ul.count li:hover{
+    width: 5px;
+    font-size: 30px;
+
+    /* list-style-type:disc; */
+
+    /* //左浮动 */
+    flex: 3;
+    height: 20px;
+}
+.swiper ul.count li a:hover{
+    color: rgba(143, 211, 244);
+}
+
+
+.content{
+    height: 1200px;
+    
+}
+.bytitle{
+
+}
+.content .box1{
+    margin: 0 auto;
+    width: 50px;
+    border-top: #019FFC solid 5px;
+}
+.bytitle h3{
+    font-size: 31px;
+    text-align: center;
+}
+.content  p{
+    width: 1200px;
+    margin: 20px auto;
+    font-size: 16px;
+    color: grey;
+    text-align: center;
+}

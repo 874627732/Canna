@@ -1,0 +1,306 @@
+ /*全局样式开始*/
+ *{
+    padding: 0px;
+    margin: 0px;
+ }
+ body{
+    padding: 0;
+    margin: 0 auto;
+    width: 100%; 
+    font-family: "微软雅黑";
+    font-size: 12px;background: #ffffff;
+}
+ ul,li,a,h2,h3,h4,h5,h6,form,p,div{
+    padding: 0;
+    margin: 0;
+}
+ ul{
+    list-style: none;
+}
+ img{
+    border: 0;
+}
+ a{
+    text-decoration: none;
+}
+ .clearfloat{
+    clear: both;
+    height: 0;
+    font-size: 1px;
+    line-height: 0;
+}
+ /*图片自适应*/
+img{
+    border:0;
+    max-width:100%;
+    height:auto;
+    /* height:auto; */
+    display:block;
+}
+ /*解决ie/firefox 浏览器中，点击一个链接后有一个虚线边框的问题*/
+ /* a{blr:expression(this.onFocus=this.close());}
+  只支持IE，过多使用效率低   */
+
+/* a{blr:expression(this.onFocus=this.blur());} */
+ /* 只支持IE，过多使用效率低 */  
+
+/* a:focus { -moz-outline-style: none; }  */
+/* IE不支持 */ 
+
+a:focus {outline:none; -moz-outline:none;}
+ a:active{background:none;}
+ /*解决chrome 浏览器，当文本框，多行文本获得焦点的时候，会有一个边框的问题*/
+ input,textarea{outline:none;}
+ /*全局样式结束*/
+
+
+ header{
+    height: 350px;
+    width: 100%;
+    margin: 0 auto;
+    background: url(../img/header3.jpg);
+    background-size: 100% 100%;
+    position: relative;
+ }
+
+header .top{
+    height: 100px;
+    width: 100%;
+}
+
+header .top .logo{
+    height: 70px;
+    width: 200px;
+    float: left;
+    overflow: hidden;
+}
+header .top .logo h1{
+    margin: 16px 0px 0px 16px;
+    font-size: 36px;
+    background-image:-webkit-linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%); 
+    -webkit-background-clip:text; 
+    -webkit-text-fill-color:transparent; 
+
+}
+header .top .nav{
+    height: 85px;
+    width: 1000px;
+    float: right;
+    overflow: hidden;
+}
+header .top .nav  ul.nav{
+    font-size: 20px;
+    width: 800px;
+    float: left;
+}
+
+header .top .nav  ul.nav li a{
+    
+    color:ghostwhite ;
+    float: left;
+    list-style-type: none;
+    text-align: center;
+    margin-left:  2.5em;
+    line-height: 85px;
+}
+header .top .nav  ul.nav li a:hover{
+    background-image:-webkit-linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%); 
+    -webkit-background-clip:text; 
+    -webkit-text-fill-color:transparent; 
+    float: left;
+    list-style-type: none;
+    text-align: center;
+    margin-left:  2.5em;
+}
+header .top .nav ul.loginPage {
+    float: left;
+    width: 60px;
+}
+header .top .nav  ul.loginPage li a{
+    color:ghostwhite ;
+    font-size: 16px;
+    /* margin-left:  2.5em; */
+    line-height: 85px;
+    background-image:-webkit-linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%); 
+    -webkit-background-clip:text; 
+    -webkit-text-fill-color:transparent; 
+    float: left;
+    list-style-type: none;
+    text-align: center;
+}
+header .top .nav ul.language {
+    float: left;
+    width: 100px;
+}
+header .top .nav ul.language li a {
+    font-size: 20px;
+    color:black ;
+    float: right;
+    margin-left: 1em;
+    list-style-type: none;
+    text-align: center;
+    line-height: 85px;
+}
+
+
+header  .middle{
+    width: 65%;
+    height: 250px;  
+    margin: 0px auto 0px auto;
+}
+.middle h2{
+    color: aliceblue;
+    font-size: 32px;
+    text-align: center;
+}
+.middle .box1{
+    margin: 0 auto;
+    width: 50px;
+    border-top: rgba(143, 211, 244,0.3) solid 5px;
+}
+.middle  p{
+    margin: 10px auto;
+    font-size: 18px;
+    color: snow;
+    text-align: center;
+}
+
+.middle .search{
+    height: 50px;
+    width: 100%;
+    display: flex;
+    margin: 0px auto;
+}	
+ .middle .search .input{
+    float: left;
+    /* //左浮动 */
+    flex: 4;
+    height: 40px;
+    outline: none;
+    border: none;
+    /* border: 1px solid rgba(132, 250, 176,0.6); */
+    /* box-sizing: border-box; */
+    background: rgba(143, 211, 244,0.3);
+    /* //盒子模型，怪异IE盒子模型，width=content+border*2+padding*2 */
+    padding-left: 10px;
+    
+}
+ .middle .search .button{
+    float: right;
+    flex: 1;
+    height: 40px;
+    background-color: rgba(143, 211, 244,0.3);
+    color: white;
+    border-style: none;
+    outline: none;
+}
+.middle .search .button:hover{
+	float:left;
+	width:96px;
+	height:40px;
+    /* background: #8fd3f4; */
+    background-image:-webkit-linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%); 
+    -webkit-background-clip:text; 
+    -webkit-text-fill-color:transparent; 
+	border:none;
+	outline:none;/*取消边框和外边框将按钮边框去掉*/
+}
+.middle .search .button:hover{
+    float: right;
+    flex: 1;
+    height: 40px;
+     background-color: rgba(143, 211, 244,1); 
+    /* color: white; */
+    border-style: none;
+    outline: none;
+}
+
+
+footer{
+    background: rgb(0,0,0);
+    width: 100%;
+    height: 200px;
+    
+}
+footer .middle{
+    width: 50%;
+    margin: 0 auto;
+}
+footer .middle .line{
+    float: left;
+    border-left: white solid 2px;
+    height: 180px;
+    width: 5px;
+    margin: 10px 0px 10px 0px;
+}
+footer .middle .left{
+    float: left;
+    margin-left: 75px;
+    margin-right: 75px;
+}
+footer .middle .left ul{
+    margin-top: 20px;
+    align-content: center;
+}
+footer .middle .left ul li{
+    color: azure;
+    font-size: 18px;
+}
+footer .middle .left ul li a{
+    color: azure;
+    font-size: 18px;
+}
+
+/* 图片滚动 */
+#max{
+    /* width: 1400px; */
+    width: 80%;
+    height: 500px;
+    align-items: center;
+    margin: 5% auto;
+    margin-top: 0%;
+  }
+  .re{
+    position: relative;
+    height: 400px;
+  }
+  .re ul{
+    list-style-type:none ;  
+  }
+  .re ul>li{
+    /* width: 1300px; */
+    width: 100%;
+    height: 300px;
+    position: absolute;
+  
+    transition: 1s;
+    opacity: 0;
+  }
+  .re ul>li img{
+    width: 1300px;
+    height: 500px;
+    /* border-radius: 10%; */
+    /* border: 15px solid #fffbd6; */
+  }
+  #max ol {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(5,75px);
+    grid-template-rows: auto;
+    grid-gap: 1em;gap: 1em;
+    float: right;
+    margin-top: 450px;
+    margin-right: 200px;
+    list-style: none;
+    top:0;left:0;
+  }
+  #max ol li {
+    width: 25px;
+    height: 10px;
+    font-size: 15px;
+    line-height: 20px;
+    float: left;
+    text-align: center;
+    border-radius: 2em;
+    border: 5px solid #999999;
+  }

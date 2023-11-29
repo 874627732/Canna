@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>注册界面</title>
+    <link rel="stylesheet" href="../css/public.css">
+    <link rel="stylesheet" href="../css/Login.css" >
+    <script src="../js/Rigiste.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="top">
+            <div class="logo">
+                <h1><a href="../web/index.html">Cannan</a></h1>
+            </div>
+            <div class="nav">
+                <ul class="nav">    
+                    <li><a href="../web/index.html">首页</a></li>
+                    <li><a href="../web/protest.html">赛事</a></li>
+                    <li><a href="../web/product.html">产品中心</a></li>
+                    <li><a href="../web/customer.html">客户服务</a></li>
+                    <li><a href="../web/about.html">关于我们</a></li>
+                    <li><a href="../web/contact.html">联系我们</a></li>
+                    
+                </ul >
+                <ul class="loginPage">
+                    <li><a href="../../Login.html">账户</a></li>
+                </ul>
+                <ul class="language">
+                    <li><a href="#">CN</a></li>
+                    <li><a href="#">EN</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+
+    <div class="login" >
+        <h3>注册</h3>
+        <form action="/RegisteServlet" method="post" >
+            <div class="inputBox">
+                <i class="iconfont icon-wode"></i>
+                <input type="text" class="name" name="username" autocomplete="off"  placeholder="请输入用户名">
+                <label >用户名</label>
+            </div>
+            <div class="inputBox">
+                <i class="iconfont icon-mima"></i>
+                <input type="password" class="inputPassword" name="password" autocomplete="off"  placeholder="请输入密码">
+                <label >密码</label>
+            </div>
+<!--            <input type="hidden" class="inputPassword" name="password">-->
+            <div class="submitButton" >
+                <input type="submit" value="注册">
+            </div>
+
+        </form>
+    </div>
+</body>
+</html>
